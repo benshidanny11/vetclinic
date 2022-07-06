@@ -1,48 +1,45 @@
-# curriculum-databases-projects-template
+#Project: Vet clinic
 
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
+## Built with
+
+- Postgresql
+
 
 
 ## Getting Started
 
-This repository includes files with plain SQL that can be used to recreate a database:
+To get a local copy up and running follow these simple example steps.
 
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+## Setup
+
+- You must have Postgres or Mysql server installed on your machine.
+- Clone this repository. 
+- Copy the queries from files and paste them in Postgres or mysql terminal
+
+## Authors:
+
+￼ **Daniel URIMUBENSHI**
+
+[<code><img height="26" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"></code>](https://github.com/benshidanny11)
+[<code><img height="26" src="https://upload.wikimedia.org/wikipedia/sco/thumb/9/9f/Twitter_bird_logo_2012.svg/1200px-Twitter_bird_logo_2012.svg.png"></code>](https://twitter.com/DBenshi)
+[<code><img height="26" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Linkedin.svg/1200px-Linkedin.svg.png"></code>](https://www.linkedin.com/in/daniel-urimubenshi-077162185/)
+<a href="mailto:benshidanny11@gmail.com?subject=Hello Danny!"><img height="26" src="https://cdn.worldvectorlogo.com/logos/official-gmail-icon-2020-.svg"></a>
 
 
-## Authors
+##  Contributing
 
-👤 **Author1**
+Contributions, issues and feature requests are welcome!
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/benshidanny11/vetclinic/issues).
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+Give a 👍 if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Microverse
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](./LICENSE.md) licensed.
