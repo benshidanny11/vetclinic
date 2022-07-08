@@ -18,10 +18,6 @@ update animals set species='unspecified';
 
 ROLLBACK;
 
-UPDATE animals SET species='digimon' WHERE name like '%mon';
-
-UPDATE animals SET species='pokemon' WHERE species='';
-
 COMMIT;
 
 BEGIN; DELETE from animals;
@@ -32,12 +28,9 @@ ROLLBACK;
 
 SAVEPOINT sp_1;
 
-UPDATE animals SET weight_kg=weight_kg*-1;
+
 
 ROLLBACK TO sp_1;
-
-
- UPDATE animals SET weight_kg=weight_kg*-1 where weight_kg<0;
 
  SELECT count(*) FROM animals;
 
@@ -48,6 +41,22 @@ SELECT MAX(escape_attempts) FROM animals WHERE neutered=true OR neutered=false;
 SELECT species, MIN(weight_kg), MAX(weight_kg) FROM animals  GROUP BY species;
 
 SELECT species, AVG(escape_attempts) FROM animals WHERE  date_of_birth BETWEEN '1990-01-01' AND '2000-12-31' GROUP BY species; 
+
+ SELECT name,date_of_birth,escape_attempts,neutered,weight_kg,species_id,owner_id FROM animals INNER JOIN owners on animals.owner_id=owners.id WHERE owners.full_name='Melody Pond';
+
+
+ SELECT name,date_of_birth,escape_attempts,neutered,weight_kg FROM animals WHERE species_id=1;
+
+  SELECT name,date_of_birth,escape_attempts,neutered,weight_kg,owners.full_name,age from owners LEFT JOIN animals ON animals.owner_id =owners.id;
+
+  select species.name,count(*) from animals INNER JOIN species on species.id=animals.species_id GROUP BY species.name;
+
+select * from animals where owner_id=2 and species_id=2;
+
+ select * from animals where owner_id=5 and escape_attempts=0;
+
+ select full_name,age,owner_id from owners LEFT JOIN animals ON owners.id=animals.owner_id group by full_name,age,owner_id order by count(*) desc limit 1;
+
 
 
 

@@ -15,5 +15,30 @@ values('Agumon','2020-02-03',0,true,10.23),
  ('Blossom','1998-10-13',3,true,17),
  ('Ditto','2022-05-14',4,true,22);
 
+  INSERT INTO owners VALUES('Sam Smith',34),
+  ('Jennifer Orwell',19),
+  ('Bob',45),
+  ('Melody Pond',77),
+  ('Dean Winchester',14),
+  ('Jodie Whittaker',38);
+
+  INSERT INTO species(name)
+   VALUES('Pokemon'),
+   ('Digimon');
+
+UPDATE animals SET species='digimon' WHERE name like '%mon';
+
+UPDATE animals SET species='pokemon' WHERE species='';
+
+ UPDATE animals SET weight_kg=weight_kg*-1 where weight_kg<0;
+
+ UPDATE animals SET weight_kg=weight_kg*-1;
+
+UPDATE animals SET species_id=2 WHERE name like '%mon';
+
+UPDATE animals SET species_id=1 WHERE name not like '%mon';
+
+
+
 
 
